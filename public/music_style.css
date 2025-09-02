@@ -1,0 +1,220 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #111;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  padding: 0 20px;
+  position: relative;
+}
+
+.menu {
+  font-size: 40px;
+  color: rgb(171, 255, 227);
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: aquamarine;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;  /* hidden initially */
+  width: 250px;
+  height: 100vh;
+  background: #222;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: left 0.4s ease;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0; /* slide in */
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.item {
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.item:hover {
+  background: rgba(127, 255, 212, 0.2);
+}
+
+/* User div at bottom */
+.user {
+  height: 80px;
+  background: rgba(255,255,255,0.1);
+}
+
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.trending {
+    background-color: rgb(0, 0, 0);
+    margin: 30px 10vw;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.arjitsingh{
+    background-color: rgb(0, 0, 0);
+    margin: 30px 10vw;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.armaanmalik{
+    background-color: rgb(0, 0, 0);
+    margin: 30px 10vw;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.englishsongs{
+    background-color: rgb(0, 0, 0);
+    margin: 30px 10vw;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.spanishsongs{
+    background-color: rgb(0, 0, 0);
+    margin: 30px 10vw;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.songs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    background-color: #181818;
+    border-radius: 12px;
+    width: 200px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.music-card:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: aquamarine;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-container:hover .play-button {
+    opacity: 1;
+}
+
+.play-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.music-info {
+    padding: 10px;
+}
+
+.music-info h4 {
+    color: white;
+    margin: 5px 0;
+}
+
+.music-info p {
+    color: #b3b3b3;
+    margin: 0;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
