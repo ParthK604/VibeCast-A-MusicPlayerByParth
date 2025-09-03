@@ -1,3 +1,5 @@
+document.addEventListener
+
 const menuBtn = document.getElementById("menu-btn");
     const sidebar = document.getElementById("sidebar");
 

@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   color: white;
 }
 
-/* Navbar */
+
 .navbar {
   width: 100%;
   height: 10vh;
@@ -38,20 +38,25 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .profile {
-  width: 50px;
-  height: 50px;
-  background-color: blue;
-  border-radius: 50%;
+  width: 80px;
+  height: 30px;
+  background-color: black;
+  color: rgb(171, 255, 227);
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgb(171, 255, 227);
+
 }
 
-/* Sidebar */
+
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px;  /* hidden initially */
+  left: -250px;  
   width: 250px;
   height: 100vh;
   background: #222;
@@ -64,7 +69,7 @@ body {
 }
 
 .sidebar.active {
-  left: 0; /* slide in */
+  left: 0; 
 }
 
 .menu-items {
@@ -86,7 +91,7 @@ body {
   background: rgba(127, 255, 212, 0.2);
 }
 
-/* User div at bottom */
+
 .user {
   height: 80px;
   background: rgba(255,255,255,0.1);
@@ -157,6 +162,34 @@ body {
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
+.expartist{
+    background-color: rgb(0, 0, 0);
+    margin: 30px 10vw;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px
+}
+.artists{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.artist{
+    background-color: #181818;
+    
+    width: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+
+}
+.artist:hover {
+    transform: scale(1.1);
+}
+
+
 
 .music-card:hover {
     transform: scale(1.05);
@@ -179,7 +212,7 @@ body {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background: aquamarine;
+    background: black;
     border-radius: 50%;
     padding: 10px;
     opacity: 0;
